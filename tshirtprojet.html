@@ -1,0 +1,144 @@
+
+app
+ <img src="./assets/logo.png">
+    <h1>{{ msg }}</h1>
+    <h2>Essential Links</h2>
+    <ul>
+      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
+      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
+      <li><a href="https://chat.vuejs.org" target="_blank">Community Chat</a></li>
+      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
+    </ul>
+    <h2>Ecosystem</h2>
+    <ul>
+      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
+      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
+      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
+      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
+    </ul>
+    fin
+
+    script 
+     data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  }
+  fin
+
+
+
+  <template>
+  <div id="app">
+   <header>
+   <h1 class="title">T-shirts Challenge</h1>
+   <hr>
+   </header>
+   <main class="main">
+     <div class="gauche">
+      <input type="reset" value="reset filter">
+      <hr>
+      <p>Price max</p>
+      <input type="range" value="Price max" min="0" max="50" step="5">
+      <p class="prix"> price ici</p>
+      <hr>
+      <div class="check">
+          <h5>Brands</h5>
+          <div>
+             <label for="">obye</label>
+            <input type="checkbox" id="" name="" value="">
+          </div>
+          <div>
+            <label for="music">zoo york</label>
+            <input type="checkbox" id="" name="" value="">
+          </div>
+           <div>
+              <label for="music">the kooples</label>
+              <input type="checkbox" id="" name="" value="">
+          </div>
+           <div>
+            <label for="music">element</label>
+            <input type="checkbox" id="" name="" value="">
+          </div>
+           <div>
+            <label for="music">cbgb</label>
+            <input type="checkbox" id="music" name="interest" value="">
+          </div>
+           <div>
+            <label for="music">dickies</label>
+            <input type="checkbox" id="" name="" value="">
+          </div>
+      </div>
+      <hr>
+      <div class="couleurs">
+        <h5>Colors</h5>
+      </div>
+
+
+
+     </div>
+     <div class="droit">droit</div>
+
+   </main>
+   <footer>footer</footer>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "app"
+};
+</script>
+
+<style>
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  width: 80%;
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+a {
+  color: #42b983;
+}
+main.main {
+  width: 98%;
+  /* margin: auto; */
+  height: auto;
+  display: flex;
+  padding: 0px;
+}
+main div.gauche {
+  border: 1 px solid black;
+  border-radius: 5px;
+  width: 30%;
+  height: auto;
+  background: #f1f3f5;
+  margin-left: 0;
+  margin-right: 30px;
+}
+main div.droit {
+  width: 66%;
+  background: #f1f3f5;
+  height: auto;
+}
+</style>
